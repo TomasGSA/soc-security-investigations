@@ -83,3 +83,78 @@ soc-security-investigation
     ├── windows-event-ids.md
     ├── classification-criteria.md
     └── field-mapping.md
+```
+
+## Metodología
+ 
+Las investigaciones siguen un enfoque basado en la convergencia de evidencias:
+ 
+1. Definir la hipótesis de amenaza.
+2. Validar la alerta original.
+3. Confirmar el origen y la ventana temporal.
+4. Determinar el alcance.
+5. Analizar el patrón temporal.
+6. Revisar la evidencia de red.
+7. Revisar las identidades involucradas.
+8. Analizar la telemetría del endpoint.
+9. Comparar la actividad con el histórico.
+10. Validar el contexto operativo.
+11. Clasificar la actividad.
+12. Documentar la conclusión.
+13. Proponer acciones de respuesta o tuning.
+14. Registrar las lecciones aprendidas.
+  
+Una alerta no debe clasificarse mediante un único indicador. La decisión debe considerar la combinación de evidencias de red, identidad, endpoint, activo, histórico y contexto operativo.
+
+## Clasificaciones utilizadas
+
+- Malicious True Positive: actividad real con evidencias suficientes de comportamiento malicioso.
+- Benign True Positive: actividad real detectada correctamente, pero asociada con un uso autorizado.
+- False Positive: la detección no representa el comportamiento descrito por la regla.
+- Inconclusive: la evidencia disponible no permite establecer una conclusión fiable.
+ 
+## Investigaciones disponibles
+
+### RPC Targeted Recon
+ 
+Metodología para investigar comunicaciones RPC originadas desde un único sistema hacia múltiples destinos.
+ 
+Incluye:
+ 
+- Alcance de red.
+- Concentración temporal.
+- Puertos RPC y SMB.
+- Autenticaciones de Windows.
+- Acceso a recursos compartidos.
+- Procesos, servicios y tareas.
+- Comparación histórica.
+- Criterios de clasificación.
+- Recomendaciones de respuesta.
+- Propuestas de tuning.
+ 
+Ubicación:
+
+```text
+investigations/rpc-targeted-recon/
+```
+
+## Formato Placeholders
+
+Los datos específicos de cada entorno deben reemplazarse por valores genéricos
+
+```text
+{SOURCE_IP}
+{SOURCE_HOST}
+{DESTINATION_IP}
+{DESTINATION_HOST}
+{USERNAME}
+{DOMAIN}
+{EARLIEST}
+{LATEST}
+{ALERT_ID}
+```
+
+
+
+
+
