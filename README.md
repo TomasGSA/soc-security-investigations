@@ -61,7 +61,7 @@ Las consultas y procedimientos deben adaptarse a los nombres de índices, soruce
 ## Estructura del repositorio
 
 
-``text
+```text
 soc-security-investigation
 ├── README.md
 ├── CONTRIBUTING.md
