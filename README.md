@@ -67,11 +67,11 @@ soc-security-investigation
 ├── CONTRIBUTING.md
 ├── SECURITY.md
 ├── investigations/
-│   ├── rpc-targeted-recon/
+│   ├── [investiation name]/
 │   │   ├── README.md
 │   │   ├── investigation.md
 │   │   ├── playbook.md
-│   │   ├── splunk-queries.md
+│   │   ├── [tool]-queries.md
 │   │   ├── detection-engineering.md
 │   │   └── lessons-learned.md
 │   └── other-investigation/
